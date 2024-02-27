@@ -1,0 +1,18 @@
+type Chat {
+  id: ID!
+  creatorId: ID
+  content: String
+  createAt: DateTime
+}
+
+type Query {
+  chats(productId: ID!): [Chat]
+}
+
+input CreateChatInput {
+  content: String
+}
+
+type Mutation {
+  createChat(input: CreateChatInput): Chat
+}
