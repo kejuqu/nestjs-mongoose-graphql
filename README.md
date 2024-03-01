@@ -1,3 +1,10 @@
+# How to start?
+
+- need to install mongodb & mongodb service is running
+  [Install MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/)
+- install node
+  [Node install](https://nodejs.org/en)
+
 ## Installation
 
 ```bash
