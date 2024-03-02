@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Chat as ChatType } from 'src/graphql';
+import { CreateChatInput } from 'src/graphql';
 import { Chat } from './chat.schema';
 import { Model } from 'mongoose';
 
@@ -13,7 +13,7 @@ export class ChatsService {
     return await this.catModel.find().exec();
   }
 
-  async create(createCatDto: Omit<ChatType, 'id'>): Promise<Chat> {
+  async create(createCatDto: CreateChatInput): Promise<Chat> {
     const createdCat = new this.catModel({
       ...createCatDto,
       createAt: new Date(),

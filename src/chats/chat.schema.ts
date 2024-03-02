@@ -4,9 +4,6 @@ import { HydratedDocument } from 'mongoose';
 @Schema()
 export class Chat {
   @Prop()
-  _id: string;
-
-  @Prop()
   creatorId: string;
 
   @Prop()
