@@ -7,8 +7,8 @@ export class ChatsResolver {
   constructor(private chatsService: ChatsService) {}
 
   @Query()
-  async chats(@Args('productId') productId: string) {
-    return this.chatsService.findAll(productId);
+  async chats() {
+    return this.chatsService.findAll();
   }
 
   @Mutation('createChat')
