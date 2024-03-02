@@ -30,6 +30,6 @@ export const getMongoConnectURI = (
   // reference: https://www.mongodb.com/docs/drivers/node/current/fundamentals/connection/connect/
   const connectURI = `${protocol}://${credentials}${host}:${port}/${name}${connectionOptionsStr}`;
 
-  console.info(`mongodb connect at: ${connectURI} ✨✨`);
+  console.info(`mongodb will connect at: ${connectURI} ✨✨`);
   return connectURI;
 };
