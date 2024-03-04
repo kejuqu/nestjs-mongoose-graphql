@@ -1,27 +1,31 @@
 # How to start?
 
+##  method 1:
+- Install [Docker Engine](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) as standalone binaries. or just install [Docker Desktop](https://docs.docker.com/desktop/)(includes both Docker Engine and Docker Compose)
+
+```bash
+# Running the app
+docker compose up -d
+```
+## method 2:
 - need to install mongodb & mongodb service is running
   [Install MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/)
 - install node
   [Node install](https://nodejs.org/en)
 
-## Installation
-
 ```bash
-$ pnpm install
-```
+# Running the app
 
-## Running the app
+pnpm install
 
-```bash
 # development
-$ pnpm run start
+pnpm run start
 
 # watch mode development
-$ pnpm run dev
+pnpm run dev
 
 # production mode
-$ pnpm run start:prod
+pnpm run start:prod
 ```
 
 ## Graphql playground
@@ -46,19 +50,6 @@ query {
 #   }
 # }
 
-```
-
-## Test
-
-```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
 ```
 
 ## Technology stack

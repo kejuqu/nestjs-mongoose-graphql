@@ -5,7 +5,7 @@ const configs = {
   port: parseInt(process.env.PORT, 10) || 8081,
   database: {
     protocol: process.env.DB_PROTOCOL || 'mongodb',
-    host: process.env.DB_HOST || '127.0.0.1',
+    host: process.env.DB_HOST || 'mongodb',
     port: parseInt(process.env.DB_PORT, 10) || 27017,
     name: process.env.DB_NAME || 'test',
     user: process.env.DB_USER,

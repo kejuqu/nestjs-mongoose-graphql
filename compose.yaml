@@ -1,0 +1,28 @@
+services:
+  mongodb:
+    image: mongo:7.0.6
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    networks:
+      - net-connect
+    volumes:
+      - mongo-hub:/data/db
+
+  nest-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nest-mongo-service
+    networks:
+      - net-connect
+    ports:
+      - 8081:8081
+    depends_on:
+      - mongodb
+
+networks:
+  net-connect:
+
+volumes:
+  mongo-hub:
