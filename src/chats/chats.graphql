@@ -16,3 +16,7 @@ input CreateChatInput {
 type Mutation {
   createChat(input: CreateChatInput): Chat
 }
+
+type Subscription {
+  messageAdded(id: ID): Chat
+}

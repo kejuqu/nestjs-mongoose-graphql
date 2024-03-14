@@ -27,5 +27,9 @@ export interface IMutation {
     createChat(input?: Nullable<CreateChatInput>): Nullable<Chat> | Promise<Nullable<Chat>>;
 }
 
+export interface ISubscription {
+    messageAdded(id?: Nullable<string>): Nullable<Chat> | Promise<Nullable<Chat>>;
+}
+
 export type DateTime = any;
 type Nullable<T> = T | null;

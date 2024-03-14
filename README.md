@@ -1,13 +1,16 @@
 # How to start?
 
-##  method 1:
+## method 1:
+
 - Install [Docker Engine](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) as standalone binaries. or just install [Docker Desktop](https://docs.docker.com/desktop/)(includes both Docker Engine and Docker Compose)
 
 ```bash
 # Running the app
 docker compose up -d
 ```
+
 ## method 2:
+
 - need to install mongodb & mongodb service is running
   [Install MongoDB Community Edition](https://www.mongodb.com/docs/manual/administration/install-community/)
 - install node

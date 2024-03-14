@@ -18,6 +18,10 @@ import configuration, { getMongoConnectURI } from './configs';
         // schema to ts type.
         path: join(process.cwd(), 'src/graphql.ts'),
       },
+      installSubscriptionHandlers: true,
+      // subscriptions: {
+      //   'graphql-ws': true,
+      // },
     }),
     MongooseModule.forRoot(getMongoConnectURI()),
     ChatsModule,
